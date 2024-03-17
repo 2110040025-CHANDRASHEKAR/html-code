@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>SURVEY FORM</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 id="title">Survey about skill week </h1>
+      <p id="description">
+        Thank you for taking the time to help us to improve the platform
+      </p>
+    </header>
+    <form action="" id="survey-form">
+      <!--text section-->
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" class="formControl"
+        placeholder="enter your name" required>
+      </div>
+        <!--end of text section-->
+
+        <!--email section-->
+        <div class="form-group">
+          <label for="email">College Email</label>
+          <input type="email" name="email" id="email" class="formControl"
+          placeholder="enter your email" required>
+        </div>
+        <!--end of email section-->
+
+        <!--type number section-->
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <input type="number" name="phone" id="phone" class="formControl"
+          placeholder="enter your phone number" required>
+          </div>
+        <!--end of number section-->
+
+        <!--Adress section-->
+        <div class="form-group">
+          <label for="address">Address<span class=""clue>(optional)</span></label>
+          <input type="address" name="address" id="address" class="formControl"
+          placeholder="enter your address" required>
+        </div>
+          <!-- select session-->
+          <div clas="form-group">
+            <p id="quest">Branch</p>
+            <select name="role" id="dropdown" class="formControl" required>
+              <option value=""disabled selected>select branch</option>
+              <option value="ECE">student</option>
+              <option value="CSE">lecturer</option>
+              <option value="AIDS">job</option>
+              <option value="others">other</option>
+              </select>
+              
+              <!-- radio button selection -->
+              <div class="form-group">
+                <p id="quest">Are you satisfied with current skill lectures</p>
+                <label for="">
+                  <input type="radio"
+                  name="source"
+                  value="freinds"
+                  class="inputRadio"
+                  checked>YES
+                </label>
+                <label for="">
+                  <input type="radio"
+                  name="source"
+                  value="tv-ads"
+                  class="inputRadio"
+                  checked>NO
+                </label>
+                <!-- <label for="">
+                  <input type="radio"
+                  name="source"
+                  value="social-media"
+                  class="inputRadio"
+                  checked>Social Media
+                </label>
+                <label for="">
+                  <input type="radio"
+                  name="source"
+                  value="newspapers"
+                  class="inputRadio"
+                  checked>Newspapers
+                </label> -->
+   </div>
+          <div class="form-group">
+            <p id="quest">Would you like to see improvement in</p>
+            <label for="">
+            <input type="checkbox"
+            name="prefer"
+            class="checkbox"
+            value="back-end-dev">
+            Back-end-Developer
+            </label>
+            <label for="">
+              <input type="checkbox"
+              name="prefer"
+              class="checkbox"
+              value="back-end-dev">
+              Back-end-Developer
+              </label>
+              <label for="">
+                <input type="checkbox"
+                name="prefer"
+                class="checkbox"
+                value="front-end-dev">
+                front-end-developer
+                </label>
+                <label for="">
+                  <input type="checkbox"
+                  name="prefer"
+                  class="checkbox"
+                  value="android-app">
+                  Android App Developer
+                  </label>
+                  <label for="">
+                    <input type="checkbox"
+                    name="prefer"
+                    class="checkbox"
+                    value="software">
+                    Software Engineering
+                    </label>
+                    <label for="">
+                      <input type="checkbox"
+                      name="prefer"
+                      class="checkbox"
+                      value="others">
+                      Others
+                      </label>
+          </div>
+          <!--end of checkbox section-->
+
+          <!--textarea section-->
+          <div class="form-group">
+            <p id="quest">Give us your feedback</p>
+            <textarea name="feedback"
+            id="feedback" cols="30"
+            rows="5" placeholder="Enter your feedback here.."></textarea>
+          </div>
+          <!--end textarea -->
+
+          <!--submit button-->
+          <div class="form-group">
+            <button type="submit" id="submit" class="btn">Submit</button>
+          </div>
+            </select>
+          </div>
+
+      </div>
+    </form>
+  </body>
+</html>
